@@ -183,6 +183,14 @@ nav {
     color: #787885;
     margin-top: 10px;
 }
+.see-more{
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgba(224, 44, 109, 0.87);
+    margin-top: 50px;
+    text-align: right;
+    /* margin-right: 20px; */
+}
 
 
 
@@ -215,5 +223,9 @@ nav {
     grid-template-columns: repeat(1,1fr);
     row-gap: 12px;
     justify-items: center;
+  }
+  .see-more{
+    margin-top: 25px;
+    padding-right: 23px;
   }
 }

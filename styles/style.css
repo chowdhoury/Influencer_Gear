@@ -222,6 +222,7 @@ footer {
   margin-top: 100px;
   height: 237px;
   background-color: #0a0826;
+  /* background-color: yellow; */
   text-align: center;
   display: flex;
   align-items: center;
@@ -240,10 +241,24 @@ footer {
   font-weight: 800;
   color: #d9dbe1;
 }
+.social-icon{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 17px;
+}
+.social{
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
 
 /* Responsive Section  */
 @media screen and (max-width: 576px) {
-  body {
+  header,main {
     margin: auto 16px auto 16px;
   }
   .nav-menu {

@@ -249,9 +249,12 @@ footer {
 }
 .social{
     font-size: 25px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     padding: 10px;
+}
+.social-icon a{
+  color: white;
 }
 
 

@@ -24,10 +24,13 @@
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
-
+.manrope-regular {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 /* Shared Style  */
 .primary-btn {
@@ -133,68 +136,110 @@ nav {
 .partners img {
 }
 
-
 /* Popular Collection Section  */
 .popular-collection {
-    max-width: 1047px;
-    margin: auto;
-    margin-top: 100px;
+  max-width: 1047px;
+  margin: auto;
+  margin-top: 100px;
 }
 .title {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 30px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 30px;
 }
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    row-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
 }
 .card {
-    max-width: 329px;
-    height: 476px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-    padding: 17px 15px;
+  max-width: 329px;
+  height: 476px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 17px 15px;
 }
-.card-title{
-    font-size: 1.75rem;
-    font-weight: 500;
-    color: #18191F;
-    margin-top: 16px;
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #18191f;
+  margin-top: 16px;
 }
-.card-price{
-    font-size: 1.5rem;
-    color: black;
-    margin-top: 6px;
-    margin-bottom: 5px;
+.card-price {
+  font-size: 1.5rem;
+  color: black;
+  margin-top: 6px;
+  margin-bottom: 5px;
 }
-.rating{
-    font-size: 0.875rem;
-    font-weight: 800;
-    color: #5E6366;
+.rating {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: #5e6366;
 }
-.card-description{
-    max-width: 196px;
-    font-size: 0.875rem;
-    font-weight: 800;
-    color: #787885;
-    margin-top: 10px;
+.card-description {
+  max-width: 196px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: #787885;
+  margin-top: 10px;
 }
-.see-more{
-    font-size: 1rem;
-    font-weight: 800;
-    color: rgba(224, 44, 109, 0.87);
-    margin-top: 50px;
-    text-align: right;
-    /* margin-right: 20px; */
+.see-more {
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgba(224, 44, 109, 0.87);
+  margin-top: 50px;
+  text-align: right;
+  /* margin-right: 20px; */
 }
 
+/* Feature Section  */
+.feature {
+  max-width: 1110px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #0a0826;
+}
+.feature-description {
+  max-width: 500px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #6c6c6c;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 
-
-
+/* Footer Section  */
+footer {
+  margin-top: 100px;
+  height: 237px;
+  background-color: #0a0826;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.footer-details {
+  margin: auto;
+  width: 262px;
+}
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+}
+.footer-description {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: #d9dbe1;
+}
 
 /* Responsive Section  */
 @media screen and (max-width: 576px) {
@@ -216,16 +261,25 @@ nav {
     flex-wrap: wrap;
     margin-top: 50px;
   }
-  .popular-collection{
+  .popular-collection {
     margin-top: 50px;
   }
-  .card-container{
-    grid-template-columns: repeat(1,1fr);
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
     row-gap: 12px;
     justify-items: center;
   }
-  .see-more{
+  .see-more {
     margin-top: 25px;
     padding-right: 23px;
+  }
+  .feature {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 50px;
+    gap: 30px;
+  }
+  figure img {
+    width: 90%;
   }
 }

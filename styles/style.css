@@ -229,7 +229,7 @@ footer {
 }
 .footer-details {
   margin: auto;
-  width: 262px;
+  max-width: 270px;
 }
 .footer-title {
   font-size: 1.5rem;
